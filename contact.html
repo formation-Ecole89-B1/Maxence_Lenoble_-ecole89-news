@@ -1,0 +1,78 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reboot.css">
+    <title>Ecole89 News</title>
+</head>
+
+<body>
+    <div class="container-left">
+        <div class="head">
+            <img src="images/logo_ecole89.jpg" alt="logo 89">
+            <div class="title">
+                <h1>ECOLE89<br>STUDENTS<br>NEWS</h1>
+            </div>
+        </div>
+        <div class="description">
+            <a class="sub-title">Latest news <span>from our students</span></a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nobis voluptates sint aliquam quo
+                amet accusamus quaerat consectetur quam debitis culpa neque vero maiores doloremque, quasi sit enim
+                ratione laboriosam?</p>
+        </div>
+        <div class="link">
+            <a href="index.html">Plan du site</a><a href="mentions_legales.html">Mentions légales</a><a
+                href="contact.html">Contact</a>
+        </div>
+    </div>
+    <div class="container-right">
+        <header>
+            <a>Contact</a>
+        </header>
+        <div class="contact">
+            <form>
+                <div class="contactez-nous">
+                    <h1>Contactez-nous</h1>
+                    <div class="topic-text">Envoyez nous un message !</div>
+                    <p class="topic-info">Vous avez besoin de plus d'informations ? Remplissez ce formulaire et un
+                        conseiller
+                        vous contactera dans les plus brefs délais.</p>
+                    <form action="/page-traitement-donnees" method="post">
+                        <div>
+                            <label for="nom">Votre nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Martin" required>
+                        </div>
+                        <div>
+                            <label for="email">Votre e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                        </div>
+                        <div>
+                            <label for="sujet">Quel est le sujet de votre message ?</label>
+                            <select name="sujet" id="sujet" required>
+                                <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                                <option value="probleme-compte">Problème avec mon compte</option>
+                                <option value="question-produit">Question à propos d’un produit</option>
+                                <option value="suivi-commande">Suivi de ma commande</option>
+                                <option value="autre">Autre...</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Votre message</label>
+                            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."
+                                required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">Envoyer mon message</button>
+                        </div>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
